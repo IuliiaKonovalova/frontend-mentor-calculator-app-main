@@ -1,5 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
 
+:root {
+  /* Theme 1 Backgrounds */
 
-font-family: 'Spartan',
-sans-serif;
+  /* main background */
+  --clr-team1-bg--500: hsl(222, 26%, 31%);
+  /* toggle background, keypad background */
+  --clr-team1-bg--700: hsl(223, 31%, 20%);
+  /* screen background */
+  --clr-team1-bg--900: hsl(224, 36%, 15%);
+
+  /* Theme 1 Keys */
+
+  /* key background */
+  --clr-team1-key--100: hsl(225, 21%, 49%);
+  /* key shadow */
+  --clr-team1-key--300: hsl(224, 28%, 35%);
+  /* key background, toggle */
+  --clr-team1-key--500: hsl(6, 63%, 50%);
+  /* key shadow */
+  --clr-team1-key--600: hsl(6, 70%, 34%);
+  /* key background */
+  --clr-team1-key--700: hsl(30, 25%, 89%);
+  /* key shadow */
+  --clr-team1-key--900: hsl(28, 16%, 65%);
+
+  /* Theme 1 Text */
+
+  --clr-team1-text--100: hsl(0, 0, 100%);
+  --clr-team1-text--300: hsl(221, 14%, 31%);
+
+  /* Theme 2 Backgrounds */
+
+
+
+  /* Fonts */
+  --ff-primary: 'Spartan', sans-serif;
+  --fs-primary: 32px;
+  --br: 1.7em;
+}
