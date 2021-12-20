@@ -92,3 +92,15 @@
   --fs-primary: 32px;
   --br: 1.7em;
 }
+
+
+/*------ Global Settings------*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {}
