@@ -196,7 +196,7 @@ input[type=number] {
   border: none;
   background-color: transparent;
   font-weight: 700;
-
+  caret-color: transparent;
 }
 
 input:focus {
