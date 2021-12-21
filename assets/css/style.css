@@ -119,6 +119,7 @@ body {
   grid-row: 2/3;
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
 }
 
 .header__title {
@@ -127,11 +128,12 @@ body {
 
 .toggle__container {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .toggle__title {
   margin-right: 2.5rem;
+  margin-bottom: 0.2rem;
   text-transform: uppercase;
   font-size: 0.8rem;
 }
@@ -142,7 +144,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 0.65rem;
   width: 4.5em;
 }
 
@@ -176,7 +177,6 @@ body {
   background-color: var(--clr-team1-key--500);
 }
 
-
 .output {
   grid-column: 2/3;
   grid-row: 3/4;
@@ -196,6 +196,7 @@ input[type=number] {
   border: none;
   background-color: transparent;
   font-weight: 700;
+
 }
 
 input:focus {
