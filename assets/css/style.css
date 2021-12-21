@@ -143,6 +143,10 @@ body {
   grid-row: 3/4;
   background-color: var(--clr-team1-bg--900);
   border-radius: var(--br);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
 }
 
 .keyboard__container {
