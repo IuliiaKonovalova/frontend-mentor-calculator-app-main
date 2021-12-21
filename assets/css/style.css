@@ -136,7 +136,47 @@ body {
   font-size: 0.8rem;
 }
 
-.toggle {}
+
+.toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0.65rem;
+  width: 4.5em;
+}
+
+.toggle__labels {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 0.2rem;
+  width: 80%;
+  font-size: 0.8rem;
+}
+
+.toggle__inputs {
+  background-color: var(--clr-team1-bg--700);
+  border-radius: 1.6rem;
+  display: flex;
+  width: 95%;
+}
+
+.toggle__inputs input {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 1rem;
+  height: 1.5rem;
+  margin: auto 0.25em;
+  /* background-color: green; */
+}
+
+.toggle__inputs input:checked {
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--clr-team1-key--500);
+}
+
 
 .output {
   grid-column: 2/3;
