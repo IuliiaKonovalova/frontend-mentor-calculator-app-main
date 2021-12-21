@@ -27,7 +27,7 @@
 
   /* Theme 1 Text */
 
-  --clr-team1-text--100: hsl(0, 0, 100%);
+  --clr-team1-text--100: #ffffff;
   --clr-team1-text--300: hsl(221, 14%, 31%);
 
   /* Theme 2 Backgrounds */
@@ -108,14 +108,35 @@ body {
   display: grid;
   grid-template-columns: 2fr 3fr 2fr;
   grid-template-rows: 1fr 0.5fr 1.5fr 4fr 1fr;
-  gap: 2rem
+  gap: 2rem;
+  color: var(--clr-team1-text--100);
+  font-family: var(--ff-primary);
+  font-weight: 700;
 }
 
 .header__container {
   grid-column: 2/3;
   grid-row: 2/3;
-  background-color: aliceblue;
+  display: flex;
+  justify-content: space-between;
 }
+
+.header__title {
+  font-size: var(--fs-primary);
+}
+
+.toggle__container {
+  display: flex;
+  align-items: center;
+}
+
+.toggle__title {
+  margin-right: 2.5rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.toggle {}
 
 .output {
   grid-column: 2/3;
