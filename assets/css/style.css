@@ -28,7 +28,7 @@
   /* Theme 1 Text */
 
   --clr-team1-text--100: #ffffff;
-  --clr-team1-text--300: hsl(221, 14%, 31%);
+  --clr-team1-text--300: rgb(68, 75, 90);
 
   /* Theme 2 Backgrounds */
 
@@ -106,7 +106,7 @@
 body {
   background-color: var(--clr-team1-bg--500);
   display: grid;
-  grid-template-columns: 2fr 3fr 2fr;
+  grid-template-columns: 2fr minmax(37rem, auto) 2fr;
   grid-template-rows: 1fr 0.5fr 1.5fr 4fr 1fr;
   gap: 2rem;
   color: var(--clr-team1-text--100);
@@ -150,22 +150,47 @@ body {
 }
 
 .keyboard__container {
+  padding: 1.5rem;
   grid-column: 2/3;
   grid-row: 4/5;
   background-color: var(--clr-team1-bg--700);
   border-radius: var(--br);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(6, minmax(100px, auto));
-}
-
-.btn__holder {
-  background-color: brown;
+  grid-template-rows: repeat(5, minmax(4.2rem, auto));
+  gap: 1.2rem;
 }
 
 .span--two {
   grid-column: span 2;
   background-color: burlywood;
+}
+
+.btn {
+  color: var(--clr-team1-text--300);
+  background-color: var(--clr-team1-key--700);
+  font-size: var(--fs-primary);
+  font-weight: 700;
+  border: 1px solid var(--clr-team1-key--900);
+  border-radius: 0.3em;
+  outline: none;
+  text-transform: uppercase;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.btn--blue {
+  background-color: var(--clr-team1-key--100);
+  color: var(--clr-team1-text--100);
+
+  font-size: 1.5rem;
+  border: 1px solid var(--clr-team1-key--300);
+}
+
+.btn--red {
+  background-color: var(--clr-team1-key--500);
+  color: var(--clr-team1-text--100);
+  border: 1px solid var(--clr-team1-key--600);
+
 }
 
 .footer {
