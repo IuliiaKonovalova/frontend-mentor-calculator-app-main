@@ -107,8 +107,8 @@ body {
   background-color: var(--clr-team1-bg--500);
   display: grid;
   grid-template-columns: 2fr minmax(37rem, auto) 2fr;
-  grid-template-rows: 1fr 0.5fr 1.5fr 4fr 1fr;
-  gap: 2rem;
+  grid-template-rows: 1fr 0.5fr 1fr 4fr 1fr;
+  gap: 1.5rem;
   color: var(--clr-team1-text--100);
   font-family: var(--ff-primary);
   font-weight: 700;
@@ -147,6 +147,45 @@ body {
   justify-content: center;
   align-items: center;
   padding: 1rem;
+}
+
+input[type=number] {
+  font-size: 3rem;
+  /* padding: 1rem; */
+  width: 95%;
+  text-align: right;
+  border: none;
+  background-color: transparent;
+  font-weight: 700;
+}
+
+input:focus {
+  outline: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input:hover {
+  border: none;
+}
+
+input::placeholder {
+  color: var(--clr-team1-text--100);
+  font-weight: 700;
+}
+
+input:not(:placeholder-shown) {
+  color: var(--clr-team1-text--100);
 }
 
 .keyboard__container {
