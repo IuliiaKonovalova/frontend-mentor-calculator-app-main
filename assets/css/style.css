@@ -154,6 +154,18 @@ body {
   grid-row: 4/5;
   background-color: var(--clr-team1-bg--700);
   border-radius: var(--br);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, minmax(100px, auto));
+}
+
+.btn__holder {
+  background-color: brown;
+}
+
+.span--two {
+  grid-column: span 2;
+  background-color: burlywood;
 }
 
 .footer {
