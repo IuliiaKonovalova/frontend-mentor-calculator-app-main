@@ -20,3 +20,15 @@ numBtns.forEach(btn => {
     calculator.updateDisplay()
   })
 })
+
+/**
+ * Loop though each operator btn,
+ * listens for a click,
+ * add operation and update the display
+ */
+operantBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    calculator.chooseOperation(btn.innerText)
+    calculator.updateDisplay()
+  })
+})
