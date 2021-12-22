@@ -6,9 +6,17 @@ btns.forEach(btn => {
   btn.addEventListener('click', () => {
     const btnValue = btn.textContent
     console.log(btnValue)
-    if () {
-
+    let calcDisplayValue
+    if (calcDisplay.value === '') {
+      calcDisplay.value = btnValue
+      calcDisplayValue = btnValue
+    } else if (calcDisplay.value === '0') {
+      calcDisplay.value = btnValue
+    } else {
+      calcDisplay.value = calcDisplay.value + btnValue
+      calcDisplayValue = calcDisplay.value
+      console.log(calcDisplayValue)
     }
-    calcDisplay.value = btnValue
+
   })
 })
