@@ -11,7 +11,7 @@ btns.forEach(btn => {
       type
     } = btn.dataset
 
-    if (type === 'number') {
+    if (type === 'number' || type === 'decimal') {
       if (calcDisplay.value === '') {
         calcDisplay.value = btnValue
         calcDisplayValue = btnValue
