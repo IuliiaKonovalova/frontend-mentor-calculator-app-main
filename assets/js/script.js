@@ -22,6 +22,8 @@ btns.forEach(btn => {
         calcDisplayValue = calcDisplay.value
         console.log(calcDisplayValue)
       }
+    } else if (type === 'operant') {
+      console.log('operant')
     } else {
       console.log('fuck')
     }
