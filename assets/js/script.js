@@ -7,7 +7,7 @@ const resetBtn = document.querySelector('[data-reset]');
 const equalBtn = document.querySelector('[data-equal]');
 const inputOutput = document.querySelector('[data-input-output]');
 
-const calculator = new Calculator(inputOutput)
+// const calculator = new Calculator(inputOutput)
 
 /**
  * Loop though each number btn,
@@ -16,8 +16,7 @@ const calculator = new Calculator(inputOutput)
  */
 numBtns.forEach(btn => {
   btn.addEventListener('click', () => {
-    calculator.addNumber(btn.innerText)
-    calculator.updateDisplay()
+    return
   })
 })
 
@@ -32,3 +31,20 @@ operantBtns.forEach(btn => {
     calculator.updateDisplay()
   })
 })
+
+equalBtn.addEventListener('click', button => {
+  calculator.compute()
+  calculator.updateDisplay()
+})
+
+resetBtn.addEventListener('click', button => {
+  calculator.clear()
+  calculator.updateDisplay()
+})
+
+deleteBtn.addEventListener('click', button => {
+  calculator.clear()
+  calculator.updateDisplay()
+})
+
+inputOutput
