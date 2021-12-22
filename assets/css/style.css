@@ -190,7 +190,6 @@ body {
 
 input[type=number] {
   font-size: 3rem;
-  /* padding: 1rem; */
   width: 95%;
   text-align: right;
   border: none;
