@@ -1,36 +1,3 @@
-class Calculator {
-  constructor(inputOutput) {
-    this.inputOutput
-    this.clear()
-  }
-
-  reset() {
-
-  }
-
-
-  delete() {
-    this.inputOutput = ''
-    this.operation = undefined
-  }
-
-  addNumber(number) {
-
-  }
-
-  chooseOperation(operation) {
-
-  }
-
-  compute() {
-
-  }
-
-  updateDisplay() {
-
-  }
-}
-
 // variables
 
 const numBtns = document.querySelectorAll('[data-number]');
@@ -40,6 +7,16 @@ const resetBtn = document.querySelector('[data-reset]');
 const equalBtn = document.querySelector('[data-equal]');
 const inputOutput = document.querySelector('[data-input-output]');
 
-module.exports = {
-  Calculator
-};
+const calculator = new Calculator(inputOutput)
+
+/**
+ * Loop though each number btn,
+ * listens for a click,
+ * add numbers and update the display
+ */
+numBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    calculator.addNumber(btn.innerText)
+    calculator.updateDisplay()
+  })
+})
