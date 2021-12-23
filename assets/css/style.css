@@ -119,6 +119,11 @@ body {
   color: var(--clr-team2-text--100);
 }
 
+.body--purple {
+  background-color: var(--clr-team3-bg--700);
+  color: var(--clr-team2-text--100);
+}
+
 .header__container {
   grid-column: 2/3;
   grid-row: 2/3;
@@ -171,6 +176,10 @@ body {
   background-color: var(--clr-team2-bg--700);
 }
 
+.toggle__inputs--purple {
+  background-color: var(--clr-team3-bg--900);
+}
+
 .toggle__inputs input {
   appearance: none;
   -webkit-appearance: none;
@@ -188,6 +197,10 @@ body {
 
 .toggle__inputs--light input:checked {
   background-color: var(--clr-team2-key--500);
+}
+
+.toggle__inputs--purple input:checked {
+  background-color: var(--clr-team3-key--500);
 }
 
 .output {
@@ -208,6 +221,10 @@ body {
   background-color: var(--clr-team2-bg--900);
 }
 
+.output--purple {
+  background-color: var(--clr-team3-bg--900);
+}
+
 .previous-operand {
   color: rgba(255, 255, 255, 0.315);
   font-size: 1.2rem;
@@ -224,6 +241,10 @@ body {
 
 .current-operand--light {
   color: var(--clr-team2-text--300);
+}
+
+.current-operand--purple {
+  color: var(--clr-team3-text--100);
 }
 
 input:focus {
@@ -245,6 +266,10 @@ input:focus {
 
 .keyboard__container--light {
   background-color: var(--clr-team2-bg--700);
+}
+
+.keyboard__container--purple {
+  background-color: var(--clr-team3-bg--900);
 }
 
 .span--two {
@@ -269,6 +294,12 @@ input:focus {
   border: 1px solid var(--clr-team2-key--900);
 }
 
+.btn--purple {
+  color: var(--clr-team3-text--100);
+  background-color: var(--clr-team3-key--700);
+  border: 1px solid var(--clr-team3-key--300);
+}
+
 .btn--blue {
   background-color: var(--clr-team1-key--100);
   color: var(--clr-team1-text--100);
@@ -279,6 +310,12 @@ input:focus {
 .btn--blue--light {
   background-color: var(--clr-team2-key--100);
   border: 1px solid var(--clr-team2-key--300);
+}
+
+.btn--blue--purple {
+  background-color: var(--clr-team3-key--100);
+  border: 1px solid var(--clr-team3-key--900);
+  color: var(--clr-team3-text--300);
 }
 
 .btn--red {
@@ -293,6 +330,12 @@ input:focus {
   border: 1px solid var(--clr-team2-key--600);
 }
 
+.btn--red--purple {
+  background-color: var(--clr-team2-key--500);
+  border: 1px solid var(--clr-team2-key--600);
+  color: var(--clr-team3-text--900);
+}
+
 .footer {
   grid-column: 1/4;
   grid-row: 5/6;
@@ -301,7 +344,7 @@ input:focus {
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 1rem;
   text-align: center;
   color: rgba(255, 255, 255, 0.644);
   letter-spacing: 0.05rem;
@@ -309,7 +352,11 @@ input:focus {
 }
 
 .attribution--light {
-  color: #377f8686;
+  color: #377f86cc;
+}
+
+.attribution--purple {
+  color: hsla(52, 100%, 62%, 0.705);
 }
 
 .credits_frontend-mentor {
@@ -323,4 +370,8 @@ input:focus {
 
 .credits_link--light {
   color: var(--clr-team2-key--100);
+}
+
+.credits_link--purple {
+  color: var(--clr-team3-text--100);
 }
