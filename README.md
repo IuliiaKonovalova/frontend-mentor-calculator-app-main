@@ -21,6 +21,7 @@ The solution to this challenge can be accessed by this [link](https://iuliiakono
 
 ![Responsive Mockup](documentation/responsive_mockup.png)
 
+---
 ## Table of contents
 
 - [User Stories](#user-stories)
@@ -37,3 +38,18 @@ The solution to this challenge can be accessed by this [link](https://iuliiakono
 - [Credits](#credits)
 - [Acknowledgments](#acknowledgments)
 
+---
+## User Stories
+
+### First Time Visitor Goals:
+
+* As a First Time Visitor, I want to easily understand the main purpose of the app, so I can learn more about this app.
+* As a First Time Visitor, I want to be able to easily navigate through the app, so I can find the content.
+* As a First Time Visitor, I want to find the app useful.
+
+### Frequent Visitor Goals:
+* As a Frequent User, I want to be able always access the app, so I can count the make calculations when I need.
+* As a Frequent User, I want to have different themes, so I can adjust the view according to the light around my device.
+* As a Frequent User, I want calculations to be always correct, so I can rely on the app completely.
+
+---
