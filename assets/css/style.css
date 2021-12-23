@@ -114,6 +114,11 @@ body {
   font-weight: 700;
 }
 
+.body--light {
+  background-color: var(--clr-team2-bg--500);
+  color: var(--clr-team2-text--100);
+}
+
 .header__container {
   grid-column: 2/3;
   grid-row: 2/3;
@@ -162,6 +167,10 @@ body {
   width: 95%;
 }
 
+.toggle__inputs--light {
+  background-color: var(--clr-team2-bg--700);
+}
+
 .toggle__inputs input {
   appearance: none;
   -webkit-appearance: none;
@@ -175,6 +184,10 @@ body {
   width: 1rem;
   height: 1rem;
   background-color: var(--clr-team1-key--500);
+}
+
+.toggle__inputs--light input:checked {
+  background-color: var(--clr-team2-key--500);
 }
 
 .output {
@@ -191,18 +204,26 @@ body {
   padding: 0.7rem 1rem 1.5rem 1rem;
 }
 
-.output .previous-operand {
+.output--light {
+  background-color: var(--clr-team2-bg--900);
+}
+
+.previous-operand {
   color: rgba(255, 255, 255, 0.315);
   font-size: 1.2rem;
   display: flex;
   align-items: flex-start;
 }
 
-.output .current-operand {
+.current-operand {
   color: var(--clr-team1-text--100);
   font-size: 2.5rem;
   display: flex;
   align-items: flex-end;
+}
+
+.current-operand--light {
+  color: var(--clr-team2-text--300);
 }
 
 input:focus {
@@ -222,9 +243,12 @@ input:focus {
   gap: 1.2rem;
 }
 
+.keyboard__container--light {
+  background-color: var(--clr-team2-bg--700);
+}
+
 .span--two {
   grid-column: span 2;
-  background-color: burlywood;
 }
 
 .btn {
@@ -236,15 +260,25 @@ input:focus {
   border-radius: 0.3em;
   outline: none;
   text-transform: uppercase;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.1) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.btn--light {
+  color: var(--clr-team2-text--300);
+  background-color: var(--clr-team2-key--700);
+  border: 1px solid var(--clr-team2-key--900);
 }
 
 .btn--blue {
   background-color: var(--clr-team1-key--100);
   color: var(--clr-team1-text--100);
-
   font-size: 1.5rem;
   border: 1px solid var(--clr-team1-key--300);
+}
+
+.btn--blue--light {
+  background-color: var(--clr-team2-key--100);
+  border: 1px solid var(--clr-team2-key--300);
 }
 
 .btn--red {
@@ -254,7 +288,22 @@ input:focus {
 
 }
 
+.btn--red--light {
+  background-color: var(--clr-team2-key--500);
+  border: 1px solid var(--clr-team2-key--600);
+}
+
 .footer {
   grid-column: 1/4;
   grid-row: 5/6;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: white;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }

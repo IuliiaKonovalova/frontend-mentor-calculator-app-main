@@ -128,10 +128,30 @@ document.addEventListener('DOMContentLoaded', function () {
   // Event listeners to change the theme
   theme1.addEventListener('click', () => {
     console.log('theme1')
+    document.querySelector('body').classList.remove('body--light');
+    document.querySelector('.toggle__inputs').classList.remove('toggle__inputs--light');
+    document.querySelector('.output').classList.remove('output--light');
+    document.querySelector('.current-operand').classList.remove('current-operand--light');
+    document.querySelector('.keyboard__container').classList.remove('keyboard__container--light');
+    document.querySelector('.btn').classList.remove('btn--light');
+    document.querySelector('.btn--blue').classList.remove('btn--blue--light');
+    document.querySelector('.btn--reset').classList.remove('btn--blue--light');
+    document.querySelector('.btn--red').classList.remove('btn--red--light');
+
   })
 
   theme2.addEventListener('click', () => {
     console.log('theme2')
+    document.querySelector('body').classList.add('body--light');
+    document.querySelector('.toggle__inputs').classList.add('toggle__inputs--light');
+    document.querySelector('.output').classList.add('output--light');
+    document.querySelector('.current-operand').classList.add('current-operand--light');
+    document.querySelector('.keyboard__container').classList.add('keyboard__container--light');
+    document.querySelector('.btn').classList.add('btn--light');
+    document.querySelector('.btn--blue').classList.add('btn--blue--light');
+    document.querySelector('.btn--reset').classList.add('btn--blue--light');
+    document.querySelector('.btn--red').classList.add('btn--red--light');
+
   })
 
   theme3.addEventListener('click', () => {
