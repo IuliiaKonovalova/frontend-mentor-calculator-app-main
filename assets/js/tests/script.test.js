@@ -3,5 +3,5 @@
  */
 
 const {
-
-} = require("../Calculator");
+  Calculator
+} = require("../script");
