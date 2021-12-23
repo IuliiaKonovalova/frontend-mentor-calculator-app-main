@@ -38,6 +38,40 @@ class Calculator {
     this.currentOperand = ''
   }
 
+  compute() {
+    // Create variable for the calculation result
+    let calcResult
+    // Convert strings to a bloating-point number
+    const previous = parseFloat(this.previousOperand)
+    const current = parseFloat(this.currentOperand)
+    // Check if we have real numbers from the user. If not, do nothing
+    if (isNaN(previous) || isNaN(current)) return
+    // Check which operation was used and compute
+    switch (this.operation) {
+      case '+':
+        calcResult = previous + current
+        break
+      case '-':
+        calcResult = previous - current
+        break
+      case '*':
+        calcResult = previous * current
+        break
+      case 'X':
+        calcResult = previous * current
+        break
+      case '/':
+        calcResult = previous / current
+        break
+      default:
+        return
+    }
+    // Update value of the variables  
+    this.currentOperand = calcResult
+    this.operation = undefined
+    this.previousOperand = ''
+  }
+
 
 }
 
