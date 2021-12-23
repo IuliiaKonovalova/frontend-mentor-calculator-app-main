@@ -124,6 +124,19 @@ const theme3 = document.getElementById('toggle__theme--3');
 const calculator = new Calculator(prevNum, curNum)
 
 document.addEventListener('DOMContentLoaded', function () {
+
+  // Event listeners to change the theme
+  theme1.addEventListener('click', () => {
+    console.log('theme1')
+  })
+
+  theme2.addEventListener('click', () => {
+    console.log('theme2')
+  })
+
+  theme3.addEventListener('click', () => {
+    console.log('theme3')
+  })
   //
   keysNum.forEach(keyNum => {
     keyNum.addEventListener('click', () => {
