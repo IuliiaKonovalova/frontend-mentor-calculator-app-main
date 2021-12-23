@@ -129,12 +129,14 @@ document.addEventListener('DOMContentLoaded', function () {
   theme1.addEventListener('click', () => {
     console.log('theme1')
     deleteTheme2();
+    deleteTheme3();
 
   })
 
   theme2.addEventListener('click', () => {
     console.log('theme2')
     addTheme2();
+    deleteTheme3();
   })
 
   theme3.addEventListener('click', () => {
@@ -233,7 +235,9 @@ const deleteTheme2 = function () {
   document.querySelector('.output').classList.remove('output--light');
   document.querySelector('.current-operand').classList.remove('current-operand--light');
   document.querySelector('.keyboard__container').classList.remove('keyboard__container--light');
-  document.querySelector('.btn').classList.remove('btn--light');
+  document.querySelectorAll('.btn').forEach(button => {
+    button.classList.add('btn--light');
+  })
   document.querySelector('.btn--blue').classList.remove('btn--blue--light');
   document.querySelector('.btn--reset').classList.remove('btn--blue--light');
   document.querySelector('.btn--red').classList.remove('btn--red--light');
@@ -242,13 +246,32 @@ const deleteTheme2 = function () {
   document.querySelector('.credits_link-2').classList.remove('credits_link--light');
 }
 
+const deleteTheme3 = function () {
+  document.querySelector('body').classList.remove('body--purple');
+  document.querySelector('.toggle__inputs').classList.remove('toggle__inputs--purple');
+  document.querySelector('.output').classList.remove('output--purple');
+  document.querySelector('.current-operand').classList.remove('current-operand--purple');
+  document.querySelector('.keyboard__container').classList.remove('keyboard__container--purple');
+  document.querySelectorAll('.btn').forEach(button => {
+    button.classList.remove('btn--purple');
+  })
+  document.querySelector('.btn--blue').classList.remove('btn--blue--purple');
+  document.querySelector('.btn--reset').classList.remove('btn--blue--purple');
+  document.querySelector('.btn--red').classList.remove('btn--red--purple');
+  document.querySelector('.attribution').classList.remove('attribution--purple');
+  document.querySelector('.credits_link-1').classList.remove('credits_link--purple');
+  document.querySelector('.credits_link-2').classList.remove('credits_link--purple');
+}
+
 const addTheme2 = function () {
   document.querySelector('body').classList.add('body--light');
   document.querySelector('.toggle__inputs').classList.add('toggle__inputs--light');
   document.querySelector('.output').classList.add('output--light');
   document.querySelector('.current-operand').classList.add('current-operand--light');
   document.querySelector('.keyboard__container').classList.add('keyboard__container--light');
-  document.querySelector('.btn').classList.add('btn--light');
+  document.querySelectorAll('.btn').forEach(button => {
+    button.classList.add('btn--light');
+  })
   document.querySelector('.btn--blue').classList.add('btn--blue--light');
   document.querySelector('.btn--reset').classList.add('btn--blue--light');
   document.querySelector('.btn--red').classList.add('btn--red--light');
@@ -263,7 +286,9 @@ const addTheme3 = function () {
   document.querySelector('.output').classList.add('output--purple');
   document.querySelector('.current-operand').classList.add('current-operand--purple');
   document.querySelector('.keyboard__container').classList.add('keyboard__container--purple');
-  document.querySelector('.btn').classList.add('btn--purple');
+  document.querySelectorAll('.btn').forEach(button => {
+    button.classList.add('btn--purple');
+  })
   document.querySelector('.btn--blue').classList.add('btn--blue--purple');
   document.querySelector('.btn--reset').classList.add('btn--blue--purple');
   document.querySelector('.btn--red').classList.add('btn--red--purple');

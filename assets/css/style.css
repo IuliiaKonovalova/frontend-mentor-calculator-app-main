@@ -297,7 +297,8 @@ input:focus {
 .btn--purple {
   color: var(--clr-team3-text--100);
   background-color: var(--clr-team3-key--700);
-  border: 1px solid var(--clr-team3-key--300);
+  border: none;
+  box-shadow: hsl(290, 70%, 36%) 0px 0px 0px, hsl(290, 70%, 36%) 0px 6px 2px 0.2px, hsl(290, 70%, 36%) 0px 0px 0px;
 }
 
 .btn--blue {
@@ -315,7 +316,9 @@ input:focus {
 .btn--blue--purple {
   background-color: var(--clr-team3-key--100);
   border: 1px solid var(--clr-team3-key--900);
-  color: var(--clr-team3-text--300);
+  color: hsl(0, 0, 100%);
+  border: none;
+  box-shadow: hsl(290, 70%, 36%) 0px 0px 0px, hsl(290, 70%, 36%) 0px 6px 2px 0.2px, hsl(290, 70%, 36%) 0px 0px 0px;
 }
 
 .btn--red {
@@ -331,8 +334,9 @@ input:focus {
 }
 
 .btn--red--purple {
-  background-color: var(--clr-team2-key--500);
-  border: 1px solid var(--clr-team2-key--600);
+  background-color: var(--clr-team3-key--500);
+  border: none;
+  box-shadow: hsl(177, 92%, 70%) 0px 0px 0px, hsl(177, 92%, 70%) 0px 6px 2px 0.2px, hsl(177, 92%, 70%) 0px 0px 0px;
   color: var(--clr-team3-text--900);
 }
 
