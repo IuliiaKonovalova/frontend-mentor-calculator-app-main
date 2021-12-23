@@ -139,6 +139,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
   theme3.addEventListener('click', () => {
     console.log('theme3')
+    deleteTheme2();
+    addTheme3();
   })
   //
   keysNum.forEach(keyNum => {
@@ -253,4 +255,19 @@ const addTheme2 = function () {
   document.querySelector('.attribution').classList.add('attribution--light');
   document.querySelector('.credits_link-1').classList.add('credits_link--light');
   document.querySelector('.credits_link-2').classList.add('credits_link--light');
+}
+
+const addTheme3 = function () {
+  document.querySelector('body').classList.add('body--purple');
+  document.querySelector('.toggle__inputs').classList.add('toggle__inputs--purple');
+  document.querySelector('.output').classList.add('output--purple');
+  document.querySelector('.current-operand').classList.add('current-operand--purple');
+  document.querySelector('.keyboard__container').classList.add('keyboard__container--purple');
+  document.querySelector('.btn').classList.add('btn--purple');
+  document.querySelector('.btn--blue').classList.add('btn--blue--purple');
+  document.querySelector('.btn--reset').classList.add('btn--blue--purple');
+  document.querySelector('.btn--red').classList.add('btn--red--purple');
+  document.querySelector('.attribution').classList.add('attribution--purple');
+  document.querySelector('.credits_link-1').classList.add('credits_link--purple');
+  document.querySelector('.credits_link-2').classList.add('credits_link--purple');
 }

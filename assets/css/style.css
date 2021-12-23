@@ -121,7 +121,7 @@ body {
 
 .body--purple {
   background-color: var(--clr-team3-bg--700);
-  color: var(--clr-team2-text--100);
+  color: var(--clr-team3-text--100);
 }
 
 .header__container {
