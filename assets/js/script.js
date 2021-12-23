@@ -1,3 +1,33 @@
+class Calculator {
+  constructor(prevNum, curNum) {
+    this.prevNum = prevNum
+    this.curNum = curNum
+    this.clear()
+  }
+
+  clear() {
+    this.currentOperand = ''
+    this.previousOperand = ''
+    this.operation = undefined
+  }
+
+  delete() {
+    // Delete the last number of the user's input
+    this.currentOperand = this.currentOperand.toString().slice(0, -1)
+  }
+
+  appendNumber(number) {
+    // Check if there is only one . in the user's input
+    if (number === '.' && this.currentOperand.includes('.')) return
+    // Limit user's input
+    if (this.currentOperand.toString().length >= 15) return
+    // Add number to the input
+    this.currentOperand = this.currentOperand.toString() + number.toString()
+  }
+
+
+}
+
 // Variables:
 const keysNum = document.querySelectorAll('[data-number]')
 const keysOperation = document.querySelectorAll('[data-operation]')
