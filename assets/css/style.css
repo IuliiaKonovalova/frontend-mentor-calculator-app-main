@@ -308,10 +308,19 @@ input:focus {
   font-weight: 100;
 }
 
+.attribution--light {
+  color: #377f8686;
+}
+
 .credits_frontend-mentor {
   margin-bottom: 1rem;
 }
 
-.attribution a {
+.credits_link {
   color: var(--clr-team1-text--100);
+  text-decoration: none;
+}
+
+.credits_link--light {
+  color: var(--clr-team2-key--100);
 }
