@@ -72,7 +72,41 @@ class Calculator {
     this.previousOperand = ''
   }
 
+  getDisplayNumber(number) {
+    // Helper function
+    // Getting string, splitting into 2 parts by (.)
+    const stringNumber = number.toString()
+    const integerDigits = parseFloat(stringNumber.split('.')[0])
+    const decimalDigits = stringNumber.split('.')[1]
+    let integerDisplay
+    if (isNaN(integerDigits)) {
+      integerDisplay = ''
+    } else {
+      // Formatting the number according to English convention 
+      integerDisplay = integerDigits.toLocaleString('en', {
+        maximumFractionDigits: 0
+      })
+    }
+    // If decimal digits exist, return the following string 
+    if (decimalDigits != null) {
+      return `${integerDisplay}.${decimalDigits}`
+    } else {
+      return integerDisplay
+    }
+  }
 
+  updateDisplay() {
+    this.curNum.innerText =
+      this.getDisplayNumber(this.currentOperand)
+    // If operation applied, push previous number and the operation to the top
+    if (this.operation != null) {
+      this.prevNum.innerText =
+        `${this.getDisplayNumber(this.previousOperand)} ${this.operation}`
+      // Otherwise, push nothing
+    } else {
+      this.prevNum.innerText = ''
+    }
+  }
 }
 
 // Variables:
