@@ -296,14 +296,22 @@ input:focus {
 .footer {
   grid-column: 1/4;
   grid-row: 5/6;
+  justify-self: center;
+  align-self: center;
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
-  color: white;
+  color: rgba(255, 255, 255, 0.644);
+  letter-spacing: 0.05rem;
+  font-weight: 100;
+}
+
+.credits_frontend-mentor {
+  margin-bottom: 1rem;
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--clr-team1-text--100);
 }
