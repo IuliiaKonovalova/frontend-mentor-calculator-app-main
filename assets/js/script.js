@@ -25,6 +25,19 @@ class Calculator {
     this.currentOperand = this.currentOperand.toString() + number.toString()
   }
 
+  chooseOperation(operation) {
+    // Check if there is no any second number: if so, do nothing
+    if (this.currentOperand === '') return
+    // Check if there are both numbers, make calculation
+    if (this.previousOperand !== '') {
+      this.compute()
+    }
+    // Update value of the variables
+    this.operation = operation
+    this.previousOperand = this.currentOperand
+    this.currentOperand = ''
+  }
+
 
 }
 
