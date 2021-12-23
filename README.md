@@ -51,5 +51,5 @@ The solution to this challenge can be accessed by this [link](https://iuliiakono
 * As a Frequent User, I want to be able always access the app, so I can count the make calculations when I need.
 * As a Frequent User, I want to have different themes, so I can adjust the view according to the light around my device.
 * As a Frequent User, I want calculations to be always correct, so I can rely on the app completely.
-
+* As a Frequent User, I want the app be flexible in size, so I can use this app on different devices.
 ---
