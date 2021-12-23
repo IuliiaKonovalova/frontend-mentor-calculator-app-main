@@ -232,6 +232,10 @@ body {
   align-items: flex-start;
 }
 
+.previous-operand--light {
+  color: var(--clr-team1-text--300);
+}
+
 .current-operand {
   color: var(--clr-team1-text--100);
   font-size: 2.5rem;

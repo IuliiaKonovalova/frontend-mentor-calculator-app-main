@@ -234,6 +234,7 @@ const deleteTheme2 = function () {
   document.querySelector('.toggle__inputs').classList.remove('toggle__inputs--light');
   document.querySelector('.output').classList.remove('output--light');
   document.querySelector('.current-operand').classList.remove('current-operand--light');
+  document.querySelector('.previous-operand').classList.remove('previous-operand--light');
   document.querySelector('.keyboard__container').classList.remove('keyboard__container--light');
   document.querySelectorAll('.btn').forEach(button => {
     button.classList.add('btn--light');
@@ -268,6 +269,7 @@ const addTheme2 = function () {
   document.querySelector('.toggle__inputs').classList.add('toggle__inputs--light');
   document.querySelector('.output').classList.add('output--light');
   document.querySelector('.current-operand').classList.add('current-operand--light');
+  document.querySelector('.previous-operand').classList.add('previous-operand--light');
   document.querySelector('.keyboard__container').classList.add('keyboard__container--light');
   document.querySelectorAll('.btn').forEach(button => {
     button.classList.add('btn--light');
