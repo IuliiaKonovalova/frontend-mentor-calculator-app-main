@@ -183,49 +183,32 @@ body {
   background-color: var(--clr-team1-bg--900);
   border-radius: var(--br);
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
+  justify-content: space-around;
+  align-items: flex-end;
+  flex-direction: column;
+  word-wrap: break-word;
+  word-break: break-all;
+  padding: 0.7rem 1rem 1.5rem 1rem;
 }
 
-input[type=number] {
-  font-size: 3rem;
-  width: 95%;
-  text-align: right;
-  border: none;
-  background-color: transparent;
-  font-weight: 700;
-  caret-color: transparent;
+.output .previous-operand {
+  color: rgba(255, 255, 255, 0.315);
+  font-size: 1.2rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.output .current-operand {
+  color: var(--clr-team1-text--100);
+  font-size: 2.5rem;
+  display: flex;
+  align-items: flex-end;
 }
 
 input:focus {
   outline: none;
 }
 
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
-}
-
-input:hover {
-  border: none;
-}
-
-input::placeholder {
-  color: var(--clr-team1-text--100);
-  font-weight: 700;
-}
-
-input:not(:placeholder-shown) {
-  color: var(--clr-team1-text--100);
-}
 
 .keyboard__container {
   padding: 1.5rem;
