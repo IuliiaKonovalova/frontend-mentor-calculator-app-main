@@ -106,7 +106,7 @@
 body {
   background-color: var(--clr-team1-bg--500);
   display: grid;
-  grid-template-columns: 2fr minmax(37rem, auto) 2fr;
+  grid-template-columns: 2fr minmax(35rem, auto) 2fr;
   grid-template-rows: 1fr 0.5fr 1fr 4fr 1fr;
   gap: 1.5rem;
   color: var(--clr-team1-text--100);

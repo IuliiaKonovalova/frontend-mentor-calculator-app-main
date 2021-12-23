@@ -10,7 +10,7 @@ const curNum = document.getElementById('current_output')
 const calculator = new Calculator(prevNum, curNum)
 
 document.addEventListener('DOMContentLoaded', function () {
-
+  //
   keysNum.forEach(keyNum => {
     keyNum.addEventListener('click', () => {
       calculator.appendNumber(keyNum.innerText)
@@ -41,8 +41,3 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 });
-
-
-// module.exports = {
-//   Calculator
-// }
