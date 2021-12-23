@@ -110,13 +110,16 @@ class Calculator {
 }
 
 // Variables:
-const keysNum = document.querySelectorAll('[data-number]')
-const keysOperation = document.querySelectorAll('[data-operation]')
-const keyEqual = document.querySelector('[data-equals]')
-const keyDel = document.querySelector('[data-delete]')
-const keyReset = document.querySelector('[data-reset]')
-const prevNum = document.getElementById('previous_output')
-const curNum = document.getElementById('current_output')
+const keysNum = document.querySelectorAll('[data-number]');
+const keysOperation = document.querySelectorAll('[data-operation]');
+const keyEqual = document.querySelector('[data-equals]');
+const keyDel = document.querySelector('[data-delete]');
+const keyReset = document.querySelector('[data-reset]');
+const prevNum = document.getElementById('previous_output');
+const curNum = document.getElementById('current_output');
+const theme1 = document.getElementById('toggle__theme--1');
+const theme2 = document.getElementById('toggle__theme--2');
+const theme3 = document.getElementById('toggle__theme--3');
 
 const calculator = new Calculator(prevNum, curNum)
 
