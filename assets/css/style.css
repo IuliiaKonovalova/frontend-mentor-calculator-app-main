@@ -479,3 +479,9 @@ input:focus {
     font-size: 1.2rem;
   }
 }
+
+@media screen and (max-width: 270px) {
+  .toggle__title {
+    display: none;
+  }
+}
