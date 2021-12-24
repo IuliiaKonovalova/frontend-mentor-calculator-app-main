@@ -26,9 +26,10 @@ class Calculator {
     this.currentOperand = this.currentOperand.toString() + number.toString()
   }
 
-  appendNewNumber() {
+  appendNewNumber(number) {
     // Renew the input if the user starts a new operation
     this.currentOperand = ""
+    this.currentOperand += number.toString()
   }
 
   chooseOperation(operation) {
