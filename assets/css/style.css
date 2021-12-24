@@ -84,7 +84,7 @@
   /* Theme 3 Text */
 
   --clr-team3-text--100: hsl(52, 100%, 62%);
-  --clr-team3-text--300: hsl(0, 0, 100%);
+  --clr-team3-text--300: white;
   --clr-team3-text--900: hsl(198, 20%, 13%);
 
   /* Fonts */
@@ -338,7 +338,7 @@ input:focus {
 .btn--blue--purple {
   background-color: var(--clr-team3-key--100);
   border: 1px solid var(--clr-team3-key--900);
-  color: hsl(0, 0, 100%);
+  color: white;
   border: none;
   box-shadow: hsl(290, 70%, 36%) 0px 0px 0px, hsl(290, 70%, 36%) 0px 6px 2px 0.2px, hsl(290, 70%, 36%) 0px 0px 0px;
 }
