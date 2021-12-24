@@ -2,6 +2,7 @@ class Calculator {
   constructor(prevNum, curNum) {
     this.prevNum = prevNum
     this.curNum = curNum
+    let calculation = false
     this.clear()
   }
 
@@ -23,6 +24,11 @@ class Calculator {
     if (this.currentOperand.toString().length >= 15) return
     // Add number to the input
     this.currentOperand = this.currentOperand.toString() + number.toString()
+  }
+
+  appendNewNumber(number) {
+
+    this.currentOperand = ""
   }
 
   chooseOperation(operation) {
@@ -161,6 +167,7 @@ document.addEventListener('DOMContentLoaded', function () {
   keyEqual.addEventListener('click', () => {
     calculator.compute()
     calculator.updateDisplay()
+    calculator.appendNewNumber()
   })
 
   keyReset.addEventListener('click', () => {
