@@ -76,5 +76,14 @@ The solution to this challenge can be accessed by this [link](https://iuliiakono
 - [GIMP](https://www.gimp.org/) - was used to make and resize images for the README file.
 
 ---
-
 ## Design
+
+- The color scheme was provided by [Frontend Mentor](https://www.frontendmentor.io).
+
+- The font-families were chosen by [Frontend Mentor](https://www.frontendmentor.io) from Google Font website.
+
+- Family: [Spartan](https://fonts.google.com/specimen/Spartan)
+- Weights: 700
+
+
+![Spartan](documentation/design/ff_spartan.png)
