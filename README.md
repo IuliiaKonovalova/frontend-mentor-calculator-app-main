@@ -107,3 +107,19 @@ The solution to this challenge can be accessed by this [link](https://iuliiakono
   - Brave:
 
   ![Main Page](documentation/compatibility/browser_brave.png)
+
+
+  ---
+### Validator testing
++ #### HTML
+  
+  - No errors or warnings were found when passing through the official [W3C](https://validator.w3.org/) validator.
+  
+    - Main Page:
+  
+    [Main Page HTML Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fiuliiakonovalova.github.io%2Ffrontend-mentor-3-column-preview-card-component-main%2F)
++ #### CSS
+  
+  - No errors or warnings were found when passing through the official [W3C (Jigsaw)](https://jigsaw.w3.org/css-validator/#validate_by_uri) validator: 
+
+  [CSS Validator Errors](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fiuliiakonovalova.github.io%2Ffrontend-mentor-3-column-preview-card-component-main%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
