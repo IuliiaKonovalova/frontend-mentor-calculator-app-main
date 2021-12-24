@@ -93,7 +93,6 @@
   --br: 0.7em;
 }
 
-
 /*------ Global Settings------*/
 *,
 *::before,
@@ -103,6 +102,7 @@
   box-sizing: border-box;
 }
 
+/*------ Body, Main grid------*/
 body {
   background-color: var(--clr-team1-bg--500);
   display: grid;
@@ -114,16 +114,19 @@ body {
   font-weight: 700;
 }
 
+/*  Body Theme-2 */
 .body--light {
   background-color: var(--clr-team2-bg--500);
   color: var(--clr-team2-text--100);
 }
 
+/*  Body Theme-3 */
 .body--purple {
   background-color: var(--clr-team3-bg--700);
   color: var(--clr-team3-text--100);
 }
 
+/*------ Header styling ------*/
 .header__container {
   grid-column: 2/3;
   grid-row: 2/3;
@@ -148,7 +151,7 @@ body {
   font-size: 0.8rem;
 }
 
-
+/*------ Toggle styling ------*/
 .toggle {
   display: flex;
   flex-direction: column;
@@ -172,10 +175,12 @@ body {
   width: 95%;
 }
 
+/*  Toggle Theme-2 */
 .toggle__inputs--light {
   background-color: var(--clr-team2-bg--700);
 }
 
+/*  Toggle Theme-3 */
 .toggle__inputs--purple {
   background-color: var(--clr-team3-bg--900);
 }
@@ -195,10 +200,12 @@ body {
   background-color: var(--clr-team1-key--500);
 }
 
+/* Checked Toggle Theme-2 */
 .toggle__inputs--light input:checked {
   background-color: var(--clr-team2-key--500);
 }
 
+/* Checked Toggle Theme-3 */
 .toggle__inputs--purple input:checked {
   background-color: var(--clr-team3-key--500);
 }
@@ -217,10 +224,12 @@ body {
   padding: 0.7rem 1.3rem 1.5rem 1.3rem;
 }
 
+/* Calculator Screen Theme-2 */
 .output--light {
   background-color: var(--clr-team2-bg--900);
 }
 
+/* Calculator Screen Theme-3 */
 .output--purple {
   background-color: var(--clr-team3-bg--900);
 }
@@ -232,6 +241,7 @@ body {
   align-items: flex-start;
 }
 
+/* Previous operant Theme-2 */
 .previous-operand--light {
   color: var(--clr-team1-text--300);
 }
@@ -243,10 +253,12 @@ body {
   align-items: flex-end;
 }
 
+/* Current input Theme-2 */
 .current-operand--light {
   color: var(--clr-team2-text--300);
 }
 
+/* Current input Theme-3 */
 .current-operand--purple {
   color: var(--clr-team3-text--100);
 }
@@ -255,7 +267,7 @@ input:focus {
   outline: none;
 }
 
-
+/*----- Keyboard Styling -----*/
 .keyboard__container {
   padding: 1.5rem;
   grid-column: 2/3;
@@ -268,10 +280,12 @@ input:focus {
   gap: 1.2rem;
 }
 
+/* Keyboard container Theme-2 */
 .keyboard__container--light {
   background-color: var(--clr-team2-bg--700);
 }
 
+/* Keyboard container Theme-3 */
 .keyboard__container--purple {
   background-color: var(--clr-team3-bg--900);
 }
@@ -292,12 +306,14 @@ input:focus {
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.1) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
+/* Keyboard keys Theme-2 */
 .btn--light {
   color: var(--clr-team2-text--300);
   background-color: var(--clr-team2-key--700);
   border: 1px solid var(--clr-team2-key--900);
 }
 
+/* Keyboard keys Theme-3 */
 .btn--purple {
   color: var(--clr-team3-text--100);
   background-color: var(--clr-team3-key--700);
@@ -312,11 +328,13 @@ input:focus {
   border: 1px solid var(--clr-team1-key--300);
 }
 
+/* Keyboard DEL and RESET keys Theme-2 */
 .btn--blue--light {
   background-color: var(--clr-team2-key--100);
   border: 1px solid var(--clr-team2-key--300);
 }
 
+/* Keyboard DEL and RESET keys Theme-3 */
 .btn--blue--purple {
   background-color: var(--clr-team3-key--100);
   border: 1px solid var(--clr-team3-key--900);
@@ -332,11 +350,13 @@ input:focus {
 
 }
 
+/* Keyboard = key Theme-2 */
 .btn--red--light {
   background-color: var(--clr-team2-key--500);
   border: 1px solid var(--clr-team2-key--600);
 }
 
+/* Keyboard = key Theme-3 */
 .btn--red--purple {
   background-color: var(--clr-team3-key--500);
   border: none;
@@ -344,6 +364,7 @@ input:focus {
   color: var(--clr-team3-text--900);
 }
 
+/*----- Footer -----*/
 .footer {
   grid-column: 1/4;
   grid-row: 5/6;
@@ -359,10 +380,12 @@ input:focus {
   font-weight: 100;
 }
 
+/* Attribution Theme-2 */
 .attribution--light {
   color: #377f86cc;
 }
 
+/* Attribution Theme-3 */
 .attribution--purple {
   color: hsla(52, 100%, 62%, 0.705);
 }
@@ -376,14 +399,17 @@ input:focus {
   text-decoration: none;
 }
 
+/* Attribution Links Theme-2 */
 .credits_link--light {
   color: var(--clr-team2-key--100);
 }
 
+/* Attribution Links Theme-3 */
 .credits_link--purple {
   color: var(--clr-team3-text--100);
 }
 
+/* ------ Media for Tablet screens ------ */
 @media screen and (max-width: 640px) {
   body {
     grid-template-columns: 1fr minmax(90%, auto) 1fr;
@@ -399,6 +425,7 @@ input:focus {
   }
 }
 
+/* ------ Media for Mobile screens ------ */
 @media screen and (max-width: 430px) {
   body {
     grid-template-columns: 0.1fr minmax(90%, auto) 0.1fr;
@@ -421,12 +448,17 @@ input:focus {
   .btn--blue {
     font-size: 1.2rem;
   }
-
 }
 
+/* ------ Media for Small Mobile screens ------ */
 @media screen and (max-width: 370px) {
   body {
     grid-template-columns: 0.1fr 90% 0.1fr;
+  }
+
+  .toggle__title {
+    margin-right: 1.3rem;
+    font-size: 0.7rem;
   }
 
   .keyboard__container {
@@ -446,10 +478,4 @@ input:focus {
   .btn--blue {
     font-size: 1.2rem;
   }
-}
-
-.toggle__title {
-  margin-right: 1.3rem;
-
-  font-size: 0.7rem;
 }
