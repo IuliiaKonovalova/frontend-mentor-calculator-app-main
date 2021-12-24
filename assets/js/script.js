@@ -195,6 +195,9 @@ document.addEventListener('DOMContentLoaded', function () {
     } else if (event.key === 'Escape') {
       calculator.clear()
       calculator.updateDisplay()
+    } else if (event.key === '.') {
+      calculator.appendNumber('.')
+      calculator.updateDisplay()
     } else if (event.key === '0') {
       calculator.appendNumber(0)
       calculator.updateDisplay()
