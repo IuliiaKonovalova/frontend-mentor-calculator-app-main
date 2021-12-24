@@ -123,3 +123,17 @@ The solution to this challenge can be accessed by this [link](https://iuliiakono
   - No errors or warnings were found when passing through the official [W3C (Jigsaw)](https://jigsaw.w3.org/css-validator/#validate_by_uri) validator: 
 
   [CSS Validator Errors](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fiuliiakonovalova.github.io%2Ffrontend-mentor-calculator-app-main%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+
+
++ #### JS
+
+
+
+
+
+
+  ### Lighthouse Report
+
+![Lighthouse Report](documentation/lighthouse_report.png)
+
+---
