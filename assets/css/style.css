@@ -135,6 +135,10 @@ body {
   align-items: flex-end;
 }
 
+h3 {
+  display: none;
+}
+
 .header__title {
   font-size: var(--fs-primary);
 }
