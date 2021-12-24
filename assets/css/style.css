@@ -453,7 +453,9 @@ input:focus {
 /* ------ Media for Small Mobile screens ------ */
 @media screen and (max-width: 370px) {
   body {
-    grid-template-columns: 0.1fr 90% 0.1fr;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 1rem;
   }
 
   .toggle__title {
@@ -463,7 +465,7 @@ input:focus {
 
   .keyboard__container {
     padding: 1.2rem;
-    grid-template-rows: repeat(5, minmax(1.5rem, auto));
+    grid-template-rows: repeat(5, minmax(1.8rem, auto));
     gap: 0.5rem;
   }
 
