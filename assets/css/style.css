@@ -406,8 +406,50 @@ input:focus {
 
   .keyboard__container {
     padding: 1.2rem;
-    grid-template-rows: repeat(5, minmax(3.2rem, auto));
-    gap: 0.7rem;
+    grid-template-rows: repeat(5, minmax(2rem, auto));
+    gap: 0.5rem;
   }
 
+  .previous-operand {
+    font-size: 0.9rem;
+  }
+
+  .current-operand {
+    font-size: 2rem;
+  }
+
+  .btn--blue {
+    font-size: 1.2rem;
+  }
+
+}
+
+@media screen and (max-width: 370px) {
+  body {
+    grid-template-columns: 0.1fr 90% 0.1fr;
+  }
+
+  .keyboard__container {
+    padding: 1.2rem;
+    grid-template-rows: repeat(5, minmax(1.5rem, auto));
+    gap: 0.5rem;
+  }
+
+  .previous-operand {
+    font-size: 0.9rem;
+  }
+
+  .current-operand {
+    font-size: 2rem;
+  }
+
+  .btn--blue {
+    font-size: 1.2rem;
+  }
+}
+
+.toggle__title {
+  margin-right: 1.3rem;
+
+  font-size: 0.7rem;
 }
