@@ -480,6 +480,7 @@ input:focus {
   }
 }
 
+/* ------ Media for Super Small Mobile screens ------ */
 @media screen and (max-width: 270px) {
   .toggle__title {
     display: none;
