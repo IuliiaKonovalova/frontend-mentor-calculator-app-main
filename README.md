@@ -161,3 +161,11 @@ No errors or warnings were found when passing through the official [JSHint](http
 ![Lighthouse Report](documentation/lighthouse_report.png)
 
 ---
+## Deployment
+
+- The site was deployed to GitHub pages. The steps to deploy are as follows: 
+  - In the [GitHub repository](https://github.com/IuliiaKonovalova/frontend-mentor-calculator-app-main/), navigate to the Settings tab 
+  - From the source section drop-down menu, select the **Main** Branch, then click "Save".
+  - The page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+
+The live link can be found [here](https://iuliiakonovalova.github.io/frontend-mentor-calculator-app-main/)
