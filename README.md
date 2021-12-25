@@ -169,3 +169,13 @@ No errors or warnings were found when passing through the official [JSHint](http
   - The page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
 The live link can be found [here](https://iuliiakonovalova.github.io/frontend-mentor-calculator-app-main/)
+
+---
+### Local Deployment
+
+In order to make a local copy of this project, you can clone it.
+In your IDE Terminal, type the following command to clone my repository:
+
+- `git clone https://github.com/IuliiaKonovalova/frontend-mentor-calculator-app-main.git`
+
+---
