@@ -88,7 +88,32 @@ The solution to this challenge can be accessed by this [link](https://iuliiakono
 
 ![Spartan](documentation/design/ff_spartan.png)
 
+---
+## Bugs
++ **Solved bugs**
 
+1. The keydown event didn't work properly when the user clicked keys on the keyboard. The computation was failing since numbers were sum as a JS string
+
+    - *Solutions:* value was changed to string.
+    
+    ```javascript
+    if (event.key === '3') {
+      calculator.appendNumber('3')
+      calculator.updateDisplay()
+    };
+    ```
+
+1. After hitting '=' key on the screen and 'Enter' on the keyboard, the user could add numbers to the result of the computation, rather than start a new operation
+
+    - *Solutions:* Add function to ```class Calculator```.
+    
+    ```javascript
+    appendNewNumber(number) {
+      // Renew the input if the user starts a new operation
+      this.currentOperand = ""
+      this.currentOperand += number.toString()
+    }
+    ```
 ---
 ## Testing
 
