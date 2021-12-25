@@ -204,3 +204,31 @@ In your IDE Terminal, type the following command to clone my repository:
   - [Web Dev Simplified](https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw) for providing free tutorials on js. I do love the implementation of classes while creating the code for calculator since it makes the code much cleaner and readable.
   
 ---
+
+## Wireframes
+
+- Desktop (Theme 1):
+
+![Design preview for the Time tracking dashboard coding challenge](documentation/design/desktop-design-theme-1.jpg)
+
+- Desktop (Theme 2):
+
+![Design preview for the Time tracking dashboard coding challenge](documentation/design/desktop-design-theme-2.jpg)
+
+- Desktop (Theme 3):
+
+![Design preview for the Time tracking dashboard coding challenge](documentation/design/desktop-design-theme-3.jpg)
+
+- Mobile (Theme 1):
+
+![Design preview for the Time tracking dashboard coding challenge](documentation/design/mobile-design-theme-1.jpg)
+
+- Mobile (Theme 2):
+
+![Design preview for the Time tracking dashboard coding challenge](documentation/design/mobile-design-theme-2.jpg)
+
+- Mobile (Theme 3):
+
+![Design preview for the Time tracking dashboard coding challenge](documentation/design/mobile-design-theme-3.jpg)
+
+---
