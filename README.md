@@ -152,10 +152,9 @@ The solution to this challenge can be accessed by this [link](https://iuliiakono
 
 + #### JS
 
+No errors or warnings were found when passing through the official [JSHint](https://jshint.com/) validator:
 
-
-
-
+  ![JSHint Validator Main Page](documentation/js_hint.png)
 
   ### Lighthouse Report
 
