@@ -1,8 +1,10 @@
 class Calculator {
+  tempNum = 0;
   constructor(prevNum, curNum) {
     this.prevNum = prevNum;
     this.curNum = curNum;
     this.clear();
+
   }
 
   clear() {
@@ -17,21 +19,26 @@ class Calculator {
   }
 
   appendNumber(number) {
+    // Check whether there was = operation, if so do not add numbers to
+    // the computation's result
+    if (number === undefined) {
+      this.currentOperand = '00'
+    }
     // Check if there is only one . in the user's input
-    if (number === '.' && this.currentOperand.includes('.')) return;
+    else if (number === '.' && this.currentOperand.includes('.')) return;
     // Limit user's input
-    if (this.currentOperand.toString().length >= 15) return;
+    else if (this.currentOperand.toString().length >= 15) return;
     // Add number to the input
-    this.currentOperand = this.currentOperand.toString() + number.toString();
-  }
-
-  appendNewNumber(number) {
-    // Renew the input if the user starts a new operation
-    this.currentOperand = "";
-    this.currentOperand += number.toString();
+    else {
+      this.currentOperand = this.currentOperand.toString() + number.toString();
+    }
   }
 
   chooseOperation(operation) {
+    //Check whether there was an = operation before
+    if (this.currentOperand === '00') {
+      this.currentOperand = this.tempNum
+    }
     // Check if there is no any second number: if so, do nothing
     if (this.currentOperand === '') return;
     // Check if there are both numbers, make calculation
@@ -76,6 +83,7 @@ class Calculator {
     this.currentOperand = calcResult;
     this.operation = undefined;
     this.previousOperand = '';
+    this.tempNum = calcResult;
   }
 
   getDisplayNumber(number) {
@@ -163,7 +171,7 @@ document.addEventListener('DOMContentLoaded', function () {
   keyEqual.addEventListener('click', () => {
     calculator.compute();
     calculator.updateDisplay();
-    calculator.appendNewNumber();
+    calculator.appendNumber();
   });
 
   keyReset.addEventListener('click', () => {
@@ -180,7 +188,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (event.key === 'Enter') {
       calculator.compute();
       calculator.updateDisplay();
-      calculator.appendNewNumber();
+      calculator.appendNumber();
     } else if (event.key === 'Backspace') {
       calculator.delete();
       calculator.updateDisplay();
