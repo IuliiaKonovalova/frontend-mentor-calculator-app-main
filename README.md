@@ -57,8 +57,41 @@ The solution to this challenge can be accessed by this [link](https://iuliiakono
 
 ## Features
 
++ ### Main Page
 
+    - Represent: 
 
+        * the calculator app.
+        ![Main Page](documentation/app_features/main_page.png)
+
+    - Consist Logo and toggle:
+
+        ![Logo](documentation/app_features/calc_logo.png)
+
+        * Logo of the app on the left side.
+
+        ![Theme Toggle](documentation/app_features/theme_toggle.png)
+
+        * Theme toggle allows user to pick preferable calculator's theme from 1 to 3.
+
+          1. Theme 1
+
+              ![Theme 1](documentation/app_features/theme_1.png)
+
+          1. Theme 2
+
+              ![Theme 2](documentation/app_features/theme_2.png)
+
+          1. Theme 3
+
+              ![Theme 3](documentation/app_features/theme_3.png)
+              
+    - Consist the calculator
+    
+    ![Main Calculator](documentation/app_features/theme_1.png)
+
+    Including:
+      
 ---
 
 ## Technologies Used
