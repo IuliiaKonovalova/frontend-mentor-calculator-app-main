@@ -105,14 +105,18 @@ The solution to this challenge can be accessed by this [link](https://iuliiakono
 
 1. After hitting '=' key on the screen and 'Enter' on the keyboard, the user could add numbers to the result of the computation, rather than start a new operation
 
-    - *Solutions:* Add function to ```class Calculator```.
+    - *Solutions:* Add global variable to ```class Calculator``` to store the result of computation. To check whether the user would add another operation to the result of the computation, or will input a new number.
     
     ```javascript
-    appendNewNumber(number) {
-      // Renew the input if the user starts a new operation
-      this.currentOperand = ""
-      this.currentOperand += number.toString()
+    class Calculator {
+      tempNum = 0;
+      constructor(prevNum, curNum) {
+        this.prevNum = prevNum;
+        this.curNum = curNum;
+        this.clear();
+      }
     }
+
     ```
 ---
 ## Testing
