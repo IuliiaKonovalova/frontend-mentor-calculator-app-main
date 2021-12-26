@@ -74,6 +74,8 @@ The solution to this challenge can be accessed by this [link](https://iuliiakono
 
         * Theme toggle allows user to pick preferable calculator's theme from 1 to 3.
 
+            When the user click on the numbers of theme toggle, the theme would change immediately.
+
           1. Theme 1
 
               ![Theme 1](documentation/app_features/theme_1.png)
@@ -85,13 +87,36 @@ The solution to this challenge can be accessed by this [link](https://iuliiakono
           1. Theme 3
 
               ![Theme 3](documentation/app_features/theme_3.png)
-              
+
     - Consist the calculator
     
     ![Main Calculator](documentation/app_features/theme_1.png)
 
     Including:
-      
+
+    - Calculator display where the user can see the operations:
+
+    ![Calculator Display](documentation/app_features/calc_screen.png)
+
+    ![Calculator Operation](documentation/app_features/calc_screen_operation.png)
+
+    - Keyboard: 
+
+        ![Calculator Display](documentation/app_features/keyboard.png)
+
+        Which includes following keys: **0-9**, **X(*)**, **+**, **-**, **/**, **Delete**, **Reset**, **=**.
+        User can use keys on the screen, as well as the stationary keyboard.
+
+        *Notice*:
+        - If the user wants to use '=' on the stationary keyboard, he/she needs to click 'Enter';
+        - If the user wants to use 'DEL' on the stationary keyboard, he/she needs to click 'Backspace';
+        - If the user wants to use 'RESET' on the stationary keyboard, he/she needs to click 'Esc';
+        - If the user wants to add operation to the computation, the previous result (with which user wants to make another operation with) will be seen on the top of the screen.
+        - If the user wants to make a new operation with new numbers after computing previously, the new numbers will be add automatically without the need to click 'RESET' or 'DEL'.
+
+    * It the end of the page the user can find the credits section with links to the company's website, which created the challenge and the github of the coder of this web app
+
+    ![Credits](documentation/app_features/credits.png)
 ---
 
 ## Technologies Used
