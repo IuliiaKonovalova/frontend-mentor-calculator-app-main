@@ -9,6 +9,7 @@ class Calculator {
   }
 
   clear() {
+    // Clear the calc display
     this.currentOperand = '';
     this.previousOperand = '';
     this.operation = undefined;
@@ -136,6 +137,7 @@ const theme1 = document.getElementById('toggle__theme--1');
 const theme2 = document.getElementById('toggle__theme--2');
 const theme3 = document.getElementById('toggle__theme--3');
 
+// New 
 const calculator = new Calculator(prevNum, curNum);
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -155,13 +157,16 @@ document.addEventListener('DOMContentLoaded', function () {
     deleteTheme2();
     addTheme3();
   });
-  //
+
+  // Listen for the number key
   keysNum.forEach(keyNum => {
     keyNum.addEventListener('click', () => {
       calculator.appendNumber(keyNum.innerText);
       calculator.updateDisplay();
     });
   });
+
+  // Listen for the operation key
   keysOperation.forEach(keyOperation => {
     keyOperation.addEventListener('click', () => {
       calculator.chooseOperation(keyOperation.innerText);
@@ -169,22 +174,26 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
+  // Listen for the = key
   keyEqual.addEventListener('click', () => {
     calculator.compute();
     calculator.updateDisplay();
     calculator.appendNumber();
   });
 
+  // Listen for the Reset key
   keyReset.addEventListener('click', () => {
     calculator.clear();
     calculator.updateDisplay();
   });
 
+  // Listen for the delete key
   keyDel.addEventListener('click', () => {
     calculator.delete();
     calculator.updateDisplay();
   });
 
+  // Listen for the keydown
   document.addEventListener('keydown', function (event) {
     if (event.key === 'Enter') {
       calculator.compute();
@@ -245,6 +254,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+// Reset to theme 1 from theme 2
 const deleteTheme2 = function () {
   document.querySelector('body').classList.remove('body--light');
   document.querySelector('.toggle__inputs').classList.remove('toggle__inputs--light');
@@ -263,6 +273,7 @@ const deleteTheme2 = function () {
   document.querySelector('.credits_link-2').classList.remove('credits_link--light');
 };
 
+// Reset to theme 1 from theme 3
 const deleteTheme3 = function () {
   document.querySelector('body').classList.remove('body--purple');
   document.querySelector('.toggle__inputs').classList.remove('toggle__inputs--purple');
@@ -280,6 +291,7 @@ const deleteTheme3 = function () {
   document.querySelector('.credits_link-2').classList.remove('credits_link--purple');
 };
 
+// Change to theme 2
 const addTheme2 = function () {
   document.querySelector('body').classList.add('body--light');
   document.querySelector('.toggle__inputs').classList.add('toggle__inputs--light');
@@ -298,6 +310,7 @@ const addTheme2 = function () {
   document.querySelector('.credits_link-2').classList.add('credits_link--light');
 };
 
+// Change to theme 3
 const addTheme3 = function () {
   document.querySelector('body').classList.add('body--purple');
   document.querySelector('.toggle__inputs').classList.add('toggle__inputs--purple');
