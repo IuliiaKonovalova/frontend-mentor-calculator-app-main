@@ -1,3 +1,4 @@
+/* jshint esversion:8 */
 class Calculator {
   tempNum = 0;
   constructor(prevNum, curNum) {
@@ -22,7 +23,7 @@ class Calculator {
     // Check whether there was = operation, if so do not add numbers to
     // the computation's result
     if (number === undefined) {
-      this.currentOperand = '00'
+      this.currentOperand = '00';
     }
     // Check if there is only one . in the user's input
     else if (number === '.' && this.currentOperand.includes('.')) return;
@@ -38,7 +39,7 @@ class Calculator {
     //Check whether there was an = operation before
     if (this.currentOperand === '00') {
       this.currentOperand = this.tempNum
-    }
+    };
     // Check if there is no any second number: if so, do nothing
     if (this.currentOperand === '') return;
     // Check if there are both numbers, make calculation
