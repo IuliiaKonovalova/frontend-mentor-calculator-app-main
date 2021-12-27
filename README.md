@@ -201,6 +201,18 @@ The solution to this challenge can be accessed by this [link](https://iuliiakono
 
     ```
 
+1. The user couldn't change the operator after clicking on one.
+
+    - *Solutions:* Add if statement to ```chooseOperator()```:
+    
+    ```javascript
+    //Check whether another operator was called
+    if (this.operation !== '') {
+      this.operation = operation;
+    }
+
+    ```
+
 ---
 ## Testing
 
