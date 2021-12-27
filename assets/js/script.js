@@ -25,9 +25,12 @@ class Calculator {
     // the computation's result
     if (number === undefined) {
       this.currentOperand = '00';
+    } else if (number === '.') {
+      // Check if there is only one . in the user's input
+      if (number === '.' && this.currentOperand.includes('.')) return;
+      // If not, add 0 automatically before .
+      this.currentOperand = '0.'
     }
-    // Check if there is only one . in the user's input
-    else if (number === '.' && this.currentOperand.includes('.')) return;
     // Limit user's input
     else if (this.currentOperand.toString().length >= 15) return;
     // Add number to the input
