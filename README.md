@@ -201,12 +201,12 @@ The solution to this challenge can be accessed by this [link](https://iuliiakono
 
     ```
 
-1. The user couldn't change the operator after clicking on one.
+1. The user couldn't change the operation after clicking on one.
 
     - *Solutions:* Add if statement to ```chooseOperator()```:
     
     ```javascript
-    //Check whether another operator was called
+    //Check whether another operation was called
     if (this.operation !== '') {
       this.operation = operation;
     }

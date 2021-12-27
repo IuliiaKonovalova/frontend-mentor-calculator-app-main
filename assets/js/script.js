@@ -41,7 +41,7 @@ class Calculator {
   }
 
   chooseOperation(operation) {
-    //Check whether another operator was called
+    //Check whether another operation was called
     if (this.operation !== '') {
       this.operation = operation;
     }
