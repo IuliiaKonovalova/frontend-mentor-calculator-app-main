@@ -176,6 +176,18 @@ The solution to this challenge can be accessed by this [link](https://iuliiakono
     }
 
     ```
+1. Ig the user divides by 0, using stationary keyboard, the result was '0'.
+
+    - *Solutions:* Add if statement to ```compute()```:
+    
+    ```javascript
+        if (previous !== 0 && current === 0) {
+          calcResult = '∞'
+        }
+
+    ```
+
+
 ---
 ## Testing
 
