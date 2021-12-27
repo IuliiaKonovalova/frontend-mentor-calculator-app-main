@@ -176,7 +176,7 @@ The solution to this challenge can be accessed by this [link](https://iuliiakono
     }
 
     ```
-1. Ig the user divides by 0, using stationary keyboard, the result was '0'.
+1. If the user divides by 0, using stationary keyboard, the result was '0'.
 
     - *Solutions:* Add if statement to ```compute()```:
     
@@ -187,6 +187,19 @@ The solution to this challenge can be accessed by this [link](https://iuliiakono
 
     ```
 
+1. If the user input. at the very beginning of the number, the calculator didn't convert it into '0.'.
+
+    - *Solutions:* Add if statement to ```appendNumber()```:
+    
+    ```javascript
+    else if (number === '.') {
+      // Check if there is only one . in the user's input
+      if (number === '.' && this.currentOperand.includes('.')) return;
+      // If not, add 0 automatically before .
+      this.currentOperand = '0.'
+    }
+
+    ```
 
 ---
 ## Testing
