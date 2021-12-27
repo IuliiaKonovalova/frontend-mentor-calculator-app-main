@@ -41,10 +41,11 @@ class Calculator {
   }
 
   chooseOperation(operation) {
-    //Check whether there was an = operation before
+    //Check whether another operator was called
     if (this.operation !== '') {
       this.operation = operation;
     }
+    //Check whether there was an = operation before
     if (this.currentOperand === '00') {
       this.currentOperand = this.tempNum
     };
