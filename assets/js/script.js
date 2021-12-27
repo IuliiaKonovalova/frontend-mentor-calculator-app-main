@@ -1,6 +1,7 @@
 /* jshint esversion:8 */
 class Calculator {
   tempNum = 0;
+  tempOperant = ''
   constructor(prevNum, curNum) {
     this.prevNum = prevNum;
     this.curNum = curNum;
@@ -41,6 +42,9 @@ class Calculator {
 
   chooseOperation(operation) {
     //Check whether there was an = operation before
+    if (this.operation !== '') {
+      this.operation = operation;
+    }
     if (this.currentOperand === '00') {
       this.currentOperand = this.tempNum
     };
@@ -54,6 +58,7 @@ class Calculator {
     this.operation = operation;
     this.previousOperand = this.currentOperand;
     this.currentOperand = '';
+
   }
 
   compute() {
