@@ -76,6 +76,9 @@ class Calculator {
         calcResult = previous * current;
         break;
       case '/':
+        if (previous !== 0 && current === 0) {
+          calcResult = '∞'
+        }
         calcResult = previous / current;
         break;
       default:
